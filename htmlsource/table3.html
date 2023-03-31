@@ -14,6 +14,7 @@
   <body>
     <!-- 
         caption : 테이블 제목(중앙 정렬 (기본))
+        figcaption : 정렬은 안됨
      -->
     <table border="1">
       <caption>
@@ -33,9 +34,40 @@
       <td colspan="3"></td>
     </table>
 
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deleniti!
-    Suscipit excepturi qui inventore, expedita corporis provident amet,
-    blanditiis totam, quas sed minima deserunt. Eum aperiam fugit illum deleniti
-    excepturi.
+    <table border="1">
+      <figcaption>
+        <strong>테이블</strong>
+      </figcaption>
+      <tr>
+        <th>이름</th>
+        <td>&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+      </tr>
+      <th>자기소개</th>
+      <td colspan="3"></td>
+    </table>
+
+    <figcaption>
+      <strong>테이블</strong>
+    </figcaption>
+    <table border="1">
+      <tr>
+        <th>이름</th>
+        <td>&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+      </tr>
+      <th>자기소개</th>
+      <td colspan="3"></td>
+    </table>
   </body>
 </html>
