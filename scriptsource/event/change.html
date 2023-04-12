@@ -30,12 +30,18 @@
     <script>
       //change : 값의 변화가 일어난 후 포커스를 잃어버릴 때
       //blur : 값의 변화와는 상관없이 포커스를 잃어버리기만 하면 발생
-      document
-        .querySelector("#word1")
-        .addEventListener(
-          "change",
-          (e) => (e.target.value = e.target.value.toLowerCase())
-        );
+
+      // document
+      //   .querySelector("#word1")
+      //   .addEventListener(
+      //     "change",
+      //     (e) => (e.target.value = e.target.value.toLowerCase())
+      //   );
+      const p1 = document.querySelector("#word1");
+      p1.addEventListener(
+        "change",
+        (p) => (p.target.value = p.target.value.toLowerCase())
+      );
 
       document.querySelector("#word2").addEventListener("blur", (e) => {
         console.log(e.target);
