@@ -39,23 +39,46 @@
       const badge = document.querySelector(".badge");
       //변화를 줄 요소
       const body = document.querySelector("body");
-
+      //배경색이 흰색일 때
       let mode = true;
-
       function modeChange() {
         if (mode) {
-          //배경색이 흰색일 때
           badge.innerHTML = "Light 🔄";
           mode = false;
         } else {
-          //배경색이 검정색일 때 흰색으로 가기 위해
-          badge.innerHTML = "Dark 🔄";
+          badge.innerHTML = "DArk 🔄";
           mode = true;
         }
         body.classList.toggle("bg-dark");
       }
-
+      //배경색이 검정색일 때 흰색으로 가기 위해
       badge.addEventListener("click", modeChange);
+
+      //Dark 버튼을 클릭하면 문서의 배경색이 검정, Light 🔄 변경
+      //Light 버튼 클릭하면 문서 배경색 흰색, DArk 🔄 변경
+
+      //bg-dark 클래스명을 부착했다가 떼었다가
+
+      //   const badge = document.querySelector(".badge");
+      //   //변화를 줄 요소
+      //   const body = document.querySelector("body");
+
+      //   let mode = true;
+
+      //   function modeChange() {
+      //     if (mode) {
+      //       //배경색이 흰색일 때
+      //       badge.innerHTML = "Light 🔄";
+      //       mode = false;
+      //     } else {
+      //       //배경색이 검정색일 때 흰색으로 가기 위해
+      //       badge.innerHTML = "Dark 🔄";
+      //       mode = true;
+      //     }
+      //     body.classList.toggle("bg-dark");
+      //   }
+
+      //   badge.addEventListener("click", modeChange);
     </script>
   </body>
 </html>
