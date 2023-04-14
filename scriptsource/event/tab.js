@@ -45,18 +45,38 @@ tabBtn2.addEventListener("click", () => {
   tabCnt1.classList.remove("show");
 });
 
-// const tab0 = document.querySelector(".list > li:first-child");
-// const tab1 = document.querySelector(".list > li:nth-child(2)");
-// const tab2 = document.querySelector(".list > li:last-child");
-// tab0.addEventListener("click", () => {
-//   if (tab0.classList.add("orange")) {
-//     tab1.classList.remove("orange");
-//     tab2.classList.remove("orange");
-//   } else if (tab1.classList.add("orange")) {
-//     tab0.classList.remove("orange");
-//     tab2.classList.remove("orange");
-//   } else if (tab2.classList.add("orange")) {
-//     tab0.classList.remove("orange");
-//     tab1.classList.remove("orange");
+// tabBtn0.addEventListener("click", () => {
+//   if (!tabBtn0.classList.contains("orange")) {
+//     tabBtn0.classList.add("orange");
+//     tabBtn1.classList.remove("orange");
+//     tabBtn2.classList.remove("orange");
+
+//     tabCnt0.classList.add("show");
+//     tabCnt1.classList.remove("show");
+//     tabCnt2.classList.remove("show");
+//   }
+// });
+
+// tabBtn1.addEventListener("click", () => {
+//   if (!tabBtn1.classList.contains("orange")) {
+//     tabBtn1.classList.add("orange");
+//     tabBtn0.classList.remove("orange");
+//     tabBtn2.classList.remove("orange");
+
+//     tabCnt1.classList.add("show");
+//     tabCnt0.classList.remove("show");
+//     tabCnt2.classList.remove("show");
+//   }
+// });
+
+// tabBtn2.addEventListener("click", () => {
+//   if (!tabBtn2.classList.contains("orange")) {
+//     tabBtn2.classList.add("orange");
+//     tabBtn0.classList.remove("orange");
+//     tabBtn1.classList.remove("orange");
+
+//     tabCnt2.classList.add("show");
+//     tabCnt0.classList.remove("show");
+//     tabCnt1.classList.remove("show");
 //   }
 // });
